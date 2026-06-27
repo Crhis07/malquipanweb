@@ -6,16 +6,17 @@ export default function ProductCard({ product }) {
   const [burner, setBurner] = useState("Gas (GLP / Natural)");
 
   const handleQuote = () => {
-    const phoneNumber = "51919705937"; // Número comercial de MalquiPan
+    //const phoneNumber = "51919705937"; // Número comercial de MalquiPan
+    const phoneNumber = "51920829333";
     
     // Trama de texto inteligente y formateada con saltos de línea y negritas para WhatsApp
     const message = 
-`¡Hola MP MalquiPan! 👋
+`¡Hola MalquiPan!
 Vengo de la página web y deseo solicitar una cotización formal para el siguiente equipo:
 
-🏭 *Equipo:* ${product.name}
-📊 *Capacidad:* ${product.production}
-🔥 *Configuración de Quemador:* Realizar cotización con sistema a *${burner}*
+*Equipo:* ${product.name}
+*Capacidad:* ${product.production}
+*Configuración de Quemador:* Realizar cotización con sistema a *${burner}*
 
 Por favor, envíame los precios, opciones de financiamiento y tiempo estimado de entrega para Lima/Provincia.`;
 
